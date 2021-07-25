@@ -15,6 +15,7 @@ Yi Luo, Saientan Bag, Orysia Zaremba, Jacopo Andreo, Stefan Wuttke, Pascal Fried
 The programs extract the MOF synthesis information from literature devided into 2 parts:
 * Publication Downloading
 * Literature Extraction
+
 The first part is in Node.js and second part in developed in Python.
 
 # Data
