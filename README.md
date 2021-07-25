@@ -11,8 +11,11 @@ Yi Luo, Saientan Bag, Orysia Zaremba, Jacopo Andreo, Stefan Wuttke, Pascal Fried
 # Contact
 - Data extraction: manuel.tsotsalas@kit.edu
 
-# Requirements
-- python 3.x
+# Introduction
+The programs extract the MOF synthesis information from literature devided into 2 parts:
+* Publication Downloading
+* Literature Extraction
+The first part is in Node.js and second part in developed in Python.
 
 # Data
 - All data required to train the models is contained in this repository.
