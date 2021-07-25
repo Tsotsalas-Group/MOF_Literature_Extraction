@@ -3,6 +3,7 @@
 ## Introduciton of literature Extraction
 This part we show the process of how scientific literature is extracted to generate 
 a table of the synthesis conditions. 
+
 ![MOF Literature Extraction](Extraction Process.png)
 
 This part is written in Python.
