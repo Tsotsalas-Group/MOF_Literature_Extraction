@@ -28,11 +28,11 @@ Also needs java in your OS:
 │  ├─pcplib           # modified pubchempy
 │  ├─post_processing  # functions related to the database
 ├─cd_tools
-│  ├─csvalkyrie       # Customized csv operation functions, suitable for cold backup
-│  ├─osvalkyrie       # Some system operation functions
+│  ├─csvalkyrie       # customized csv operation functions, suitable for cold backup
+│  ├─osvalkyrie       # some system operation functions
 │  └─ToHTML           # Database operation functions
 ├─SampleDatabase      
-└─_CommonRedist       # Some necessary files
+└─_CommonRedist       # some necessary files
 ```
     
 * database: the database we extracted for Machine Learning:
