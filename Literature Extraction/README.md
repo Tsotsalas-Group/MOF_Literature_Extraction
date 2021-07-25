@@ -4,7 +4,7 @@
 This part we show the process of how scientific literature is extracted to generate 
 a table of the synthesis conditions. 
 
-![MOF Literature Extraction](MOF_Literature_Extraction/Literature Extraction/Extraction Process.png)
+![MOF Literature Extraction](https://github.com/Tsotsalas-Group/MOF_Literature_Extraction/blob/main/Literature%20Extraction/Extraction%20Process.png)
 
 This part is written in Python.
 
