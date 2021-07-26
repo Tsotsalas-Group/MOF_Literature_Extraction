@@ -16,9 +16,9 @@ Also needs java in your OS:
 
 
 ## File descirption
-* code: All python script for literature Extraction
+* Code: All python script for literature Extraction
 ```
-.
+Code
 ├─cd_lib
 │  ├─chetg            # inout and output for chemicaltagger
 │  ├─chose_para       # Paragraph classification
@@ -34,7 +34,7 @@ Also needs java in your OS:
 └─_CommonRedist       # Some necessary files
 ```
     
-* database: the database we extracted for Machine Learning:
+* Database: the database we extracted for Machine Learning:
   * SynMOF_A:
   * SynMOF_M:  
   * SynMOF_A_for_ML:
