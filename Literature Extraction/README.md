@@ -3,7 +3,8 @@
 ## Introduciton of literature Extraction
 This part we show the process of how scientific literature is extracted to generate 
 a table of the synthesis conditions. 
-![MOF Literature Extraction](Extraction Process.png)
+
+![MOF Literature Extraction](https://github.com/Tsotsalas-Group/MOF_Literature_Extraction/blob/main/Literature%20Extraction/Extraction%20Process.png)
 
 This part is written in Python.
 
@@ -27,11 +28,11 @@ Code
 │  ├─pcplib           # modified pubchempy
 │  ├─post_processing  # functions related to the database
 ├─cd_tools
-│  ├─csvalkyrie       # Customized csv operation functions, suitable for cold backup
-│  ├─osvalkyrie       # Some system operation functions
+│  ├─csvalkyrie       # customized csv operation functions, suitable for cold backup
+│  ├─osvalkyrie       # some system operation functions
 │  └─ToHTML           # Database operation functions
 ├─SampleDatabase      
-└─_CommonRedist       # Some necessary files
+└─_CommonRedist       # some necessary files
 ```
     
 * Database: the database we extracted for Machine Learning:
