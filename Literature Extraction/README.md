@@ -35,7 +35,7 @@ Code
 └─_CommonRedist       # some necessary files
 ```
     
-* Database: the database we extracted for Machine Learning:
+* Databases: the database we extracted for Machine Learning:
   * SynMOF_A:
   * SynMOF_M:  
   * SynMOF_A_for_ML:
