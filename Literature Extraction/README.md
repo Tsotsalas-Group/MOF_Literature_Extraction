@@ -31,13 +31,14 @@ Code
 │  ├─csvalkyrie       # customized csv operation functions, suitable for cold backup
 │  ├─osvalkyrie       # some system operation functions
 │  └─ToHTML           # Database operation functions
-├─SampleDatabase      
+├─DemoDatabase        # A demo database for literature extraction demo
 └─_CommonRedist       # some necessary files
 ```
     
 * Databases: the database we extracted for Machine Learning:
-  * SynMOF_A:
-  * SynMOF_M:
-  * SynMOF_ME:
+  * SynMOF_A:   983 entries of MOF synthesis conditions based on automatical extraction
+  * SynMOF_ME:  880 entries of MOF synthesis conditions
+  * SynMOF_M:   880 entries of MOF synthesis conditions
+
 
 
