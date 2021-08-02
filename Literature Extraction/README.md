@@ -1,7 +1,7 @@
 
 # literature Extraction
 ## Introduciton of literature Extraction
-This part we show the process of how scientific literature is extracted to generate 
+In this part we show the process of how scientific literature is extracted to generate 
 a table of the synthesis conditions. 
 
 ![MOF Literature Extraction](https://github.com/Tsotsalas-Group/MOF_Literature_Extraction/blob/main/Literature%20Extraction/Extraction%20Process.png)
@@ -17,7 +17,7 @@ Also needs java in your OS:
 
 
 ## File descirption
-* Code: All python script for literature Extraction
+* Code: All python script for literature extraction
 ```
 Code
 ├─cd_lib
