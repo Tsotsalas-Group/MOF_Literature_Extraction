@@ -23,7 +23,7 @@ def sub_files(root_dic,ext):
 
 def project_path():
     curPath = os.path.abspath(os.path.dirname(__file__))
-    rootPath = curPath[:curPath.find("c_reader_local") + len("c_reader_local")]
+    rootPath = curPath[:curPath.find("Code") + len("Code")]
     return rootPath
 
 

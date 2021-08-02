@@ -39,3 +39,13 @@ def cde_html(item_name: str, dir_path: str, *args, full_page = True ):
     else:
         lgrd.warn(f'{cont_root} can not find eror')
         return None
+
+def onlystr(item):
+    if isinstance(item, float):
+        return str(round(item, 2))
+    if item is None:
+        return ''
+    if isinstance(item, int):
+        return str(item)
+    else:
+        return item

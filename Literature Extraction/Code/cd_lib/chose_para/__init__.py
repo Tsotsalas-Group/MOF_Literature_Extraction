@@ -3,6 +3,96 @@ import chemdataextractor as cder
 # from spacy.matcher import Matcher
 from chemdataextractor.nlp.tokenize import ChemWordTokenizer
 
+class cde_paras:
+    """
+    Initialization:
+        item = cde_paras(cder obj of an_article_from_cde_reading)
+    """
+
+    def __init__(self, body):
+        # save and classify the article
+        self.__body = body
+        self.__sny_para_list = self.selcet_para(body)
+        self.__sny_num = len(self.__sny_para_list)
+
+        # # Save all the abvs in the text
+        # self__abv_list = {}
+        # for item in body.abbreviation_definitions:
+        #     self.__abv_list[item[0][0]] = (" ".join(item[1]), item[2])
+        # for item in body.records.serialize():
+        #     if ('names' in item) and (len(item['names']) > 1):
+        #         if len(set([name_item.lower() for name_item in item['names']])) > 1:
+        #             '''
+        #             abv_name:shortes in names
+        #             full_name: longest in names
+        #             abv_name = reduce(lambda x, y: x if len(x) < len(y) else y, item['names']) or min(item['names'], key=len)
+        #             '''
+        #             self.__abv_list[min(item['names'], key=len)] = (max(item['names'], key=len), 'CM')
+        #             continue
+
+    def sny_sele(self):
+        # whether it be selected or not
+        if self.__sny_para_list:
+            return True
+        else:
+            return False
+
+    def sny_cont_num(self):
+        # Numbers of the selected paragraphs
+        return len(self.__sny_para_list)
+
+    def sny_para_obj(self):
+        # Content of the selected paragraphs
+        return self.__sny_para_list
+
+    def sny_para_str(self):
+        # Content of the selected paragraphs
+        return [x.text for x in self.__sny_para_list]
+
+    def select_condition(self):
+        """
+                a flow kind of method is proposed on the assuption that:
+                1) Chemical have a partent
+
+        cde_dic = {'NN': 'noun',
+         'CD': 'cardinal number',
+         'VBZ': 'verb (third person singular present)',
+         'DT': 'determiner',
+         'NNS': 'noun plural',
+         'IN': 'preposition',
+         'JJ': 'adjective',
+         'CC': 'coordinating conjunction',
+         'CM': 'chemical mention'}
+
+
+        to analyze a sentens, constituency  tree is need!!!
+        how to get the amount?
+        Instead of get the chemical first,
+        we can start to find the unit first, then follow the constituency  tree to get the chemical head of this unit.
+
+        => the core of the extracting and identification is to find the NEVER-changed things in the colorful world!
+
+
+                :return: ({'no':int, 'processing': 'IN'|'ADD'|'AT'|'FOR'|'COOL', cont_dic:{}})
+                    -ADD    cont_dic = {'name':str, 'full_name':str, 'unit':'mmol'|'mol'|'g'|'kg'|'mL'|'ml','value':float}
+                    -IN     cont_dic = { 'item': str} #will start with 'a' or 'an' and end with noun
+                    -AT     cont_dic = {'unit': 'K'|'C', 'value': float }
+                    -FOR    cont_dic = {'unit': 'min'|'h', 'value' : float}
+                    -COOL   cont_dic = {'slow' =Boolean, 'unit': 'min'|'h', 'value' : float}
+        """
+        return
+
+    def selcet_para(self, html_cde):
+        chosen_para = []
+        for para in html_cde.paragraphs:
+            if syn_para_selector(para):
+                chosen_para.append(para)
+        return chosen_para
+
+
+
+
+
 
 def mod_text(text: str):
     text = text.replace('silica gel plates', 'silica gel')

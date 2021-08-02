@@ -37,9 +37,7 @@ Code
     
 * Databases: the database we extracted for Machine Learning:
   * SynMOF_A:
-  * SynMOF_M:  
-  * SynMOF_A_for_ML:
-  * SynMOF_ME_for_ML:  
-  * SynMOF_M_for_ML:
+  * SynMOF_M:
+  * SynMOF_ME:
 
 
