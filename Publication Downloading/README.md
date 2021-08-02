@@ -19,7 +19,7 @@ According to the DOI of each file, the program downloads the HTML content form t
    ```
 
 ## Some problems inside Publication Downloading
-1. The publisher's website has been working to update their pages and the loading process  to provide a higher user experience. These new changes will cause errors in the reading of the web pages of some publishers.
+1. The publishers updated their website and the loading process to provide a higher user experience. These changes may cause errors in reading the webpages of these publishers.
 1. This program uses the headless browser Chromium built in puppeteer to load web pages. But sometimes the headless browser may fail, and it is possible to use the user's own chrome browser, or to set the headless browser to "false".
 
 
