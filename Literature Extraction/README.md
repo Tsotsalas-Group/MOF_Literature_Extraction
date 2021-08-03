@@ -54,7 +54,7 @@ jupyter notebook LiteratureExtractionDemo.ipynb
 Code
 ├─cd_lib
 │  ├─chetg            # inout and output for chemicaltagger
-│  ├─chose_para       # Paragraph classification
+│  ├─chose_para       # paragraph classification
 │  ├─csd_api          # some functions of CSD API
 │  ├─csv_cond         # read the result of chemicaltagger
 │  ├─pcplib           # modified pubchempy
@@ -62,9 +62,9 @@ Code
 ├─cd_tools
 │  ├─csvalkyrie       # customized csv operation functions, suitable for cold backup
 │  ├─osvalkyrie       # some system operation functions
-│  └─ToHTML           # Database operation functions
-├─DemoDatabase        # A demo database for LiteratureExtractionDemo.ipynb
-└─_CommonRedist       # some necessary files
+│  └─ToHTML           # database operation functions
+├─_CommonRedist       # some necessary files
+└─DemoDatabase        # a demo database for LiteratureExtractionDemo.ipynb
 ```
     
 * Databases: the database we extracted for Machine Learning:
