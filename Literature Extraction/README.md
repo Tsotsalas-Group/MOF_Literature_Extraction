@@ -10,11 +10,43 @@ This part is written in Python.
 
 ## Dependency of literature Extraction
 * python 3.7
-* ...
+* pandas
+* chemdataextractor
+* numpy
+* html5lib
+* xlrd
+* pubchempy
+* jupyterlab
+* nltk
+* unidecode
+* theano
   
 Also needs java in your OS:
-* java 6.5
+* java
 
+## Installation of Dependency
+For java, one of the easies ways to install java is https://www.java.com/
+
+it is recommended to use conda to install all the python dependency
+1. create and activate a new environment
+```
+conda create -n [env name] python=3.7 -y
+conda activate [env name]
+
+```
+2. install dependency
+```
+conda install pandas -y
+conda install -c conda-forge chemdataextractor numpy theano nltk jupyterlab -y
+conda install -c anaconda html5lib xlrd unidecode -y
+conda install -c bioconda pubchempy -y
+```
+
+3. open the demo
+```
+cd "[root_of_MOF_literature_Extraction]/Literature Extraction/Code"
+jupyter notebook LiteratureExtractionDemo.ipynb
+```
 
 ## File descirption
 * Code: All python script for literature extraction
@@ -31,14 +63,15 @@ Code
 │  ├─csvalkyrie       # customized csv operation functions, suitable for cold backup
 │  ├─osvalkyrie       # some system operation functions
 │  └─ToHTML           # Database operation functions
-├─DemoDatabase        # A demo database for literature extraction demo
+├─DemoDatabase        # A demo database for LiteratureExtractionDemo.ipynb
 └─_CommonRedist       # some necessary files
 ```
     
 * Databases: the database we extracted for Machine Learning:
   * SynMOF_A:   983 entries of MOF synthesis conditions based on automatical extraction
-  * SynMOF_ME:  880 entries of MOF synthesis conditions
-  * SynMOF_M:   880 entries of MOF synthesis conditions
+  * SynMOF_ME:  841 entries of MOF synthesis conditions based on manually extraction
+  * SynMOF_M:   841 entries of MOF synthesis conditions
+  
 
 
 
